@@ -58,10 +58,6 @@ Kubernetes provides DNS resolution for inter-pod communication using CoreDNS or 
 - <br>
 # Testing Scenarios
 - Autoscaling
-To test autoscaling, you can use Kubernetes Horizontal Pod Autoscaler (HPA) and simulate high traffic using a tool like locust or ab. Monitor scaling behavior using: 'kubectl get hpa'
-<br>
+To test autoscaling, you can use Kubernetes Horizontal Pod Autoscaler (HPA) and simulate high traffic using a tool like `locust` or `ab`. Monitor scaling behavior using: 'kubectl get hpa'
 
-# Database Interactions
-- Simulate high load on MongoDB using benchmarking tools and observe the application’s ability to handle increased traffic and database load.
-- Results: Note any issues such as increased latency or failure to scale properly. Adjust resource requests/limits and scaling policies based on these observations.
   
