@@ -1,7 +1,7 @@
 # Instructions
 
 ## Instructions to Build and Push Docker Image
-
+<br>
 
 Build the Docker Image
 ## docker build -t your-username/flask-app:latest
