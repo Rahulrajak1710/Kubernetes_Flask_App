@@ -40,12 +40,17 @@
 <br>
 # DNS Resolution in Kubernetes
 Kubernetes provides DNS resolution for inter-pod communication using `CoreDNS` or `kube-dns`. Each pod can communicate with other pods using service names (e.g., `mongo-service`) which resolve to the corresponding pod IP addresses. Kubernetes DNS automatically manages these resolutions, allowing seamless communication between services.
+
+
 <br>
 # Resource Requests and Limits in Kubernetes
 - Requests:
   The minimum amount of resources (CPU/Memory) that Kubernetes guarantees for a container. If a container requires more resources than requested, it might be throttled.
 - Limits:
    The maximum amount of resources that a container can use. Exceeding these limits might result in the container being throttled or terminated.
+
+
+   
   <br>
 # Design Choices
 - Flask Application: Flask was chosen for its simplicity and ease of deployment. Alternatives like Django were considered but deemed too heavyweight for this example.
@@ -55,7 +60,9 @@ Kubernetes provides DNS resolution for inter-pod communication using `CoreDNS` o
 - Docker: Using Docker ensures consistent environments across different stages of development. Alternatives like Podman were considered but Docker’s widespread use and tooling support made it preferable.
 
 - Minikube: Minikube provides a local Kubernetes environment that is ideal for development and testing. Alternatives like Kind were considered but Minikube’s broader feature set and integration with various Kubernetes tools made it a better choice.
-- <br>
+
+  
+  <br>
 # Testing Scenarios
 - Steps for Testing Autoscaling:<br>
 Apply HPA Configuration `kubectl apply -f flask-app-hpa.yaml`
