@@ -26,5 +26,10 @@ kubectl apply -f mongo-pv-pvc.yaml <br>
 kubectl apply -f mongo-statefulset.yaml <br>
 kubectl apply -f flask-deployment.yaml <br>
 kubectl apply -f flask-hpa.yaml <br>
+- Access the Flask application <br>
+kubectl get svc flask-service
+# DNS Resolution in Kubernetes
+Kubernetes provides DNS resolution for inter-pod communication using CoreDNS or kube-dns. Each pod can communicate with other pods using service names (e.g., mongo-service) which resolve to the corresponding pod IP addresses. Kubernetes DNS automatically manages these resolutions, allowing seamless communication between services.
+# Resource Requests and Limits in Kubernetes
 
   
