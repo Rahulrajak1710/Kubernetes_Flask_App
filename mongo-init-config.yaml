@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: mongo-init-config
+data:
+  mongo-init.js: |
+    db.createUser({
+      user: "flask_user",
+      pwd: "flask_pass",
+      roles: [{ role: "readWrite", db: "flask_db" }]
+    });
