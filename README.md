@@ -65,10 +65,10 @@ Kubernetes provides DNS resolution for inter-pod communication using `CoreDNS` o
   
   <br>
 # Testing Scenarios
-#Steps for Testing Autoscaling:<br>
-Apply HPA Configuration `kubectl apply -f flask-app-hpa.yaml`
+# Steps for Testing Autoscaling:<br>
+- Apply HPA Configuration <br> `kubectl apply -f flask-app-hpa.yaml`
 - Simulate High Traffic <br>
-  Use a load testing tool such as Apache Benchmark `ab` or `Locust` to generate high traffic:
+Use a load testing tool such as Apache Benchmark `ab` or `Locust` to generate high traffic:
 - Monitor Autoscaling <br>
 `kubectl get hpa`
   
