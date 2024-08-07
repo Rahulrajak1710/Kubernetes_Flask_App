@@ -36,7 +36,7 @@ docker login docker push your-username/flask-app:latest
 
 - Access the Flask application <br>
 
-kubectl get svc flask-service
+  kubectl get svc flask-service
 <br>
 # DNS Resolution in Kubernetes
 Kubernetes provides DNS resolution for inter-pod communication using CoreDNS or kube-dns. Each pod can communicate with other pods using service names (e.g., mongo-service) which resolve to the corresponding pod IP addresses. Kubernetes DNS automatically manages these resolutions, allowing seamless communication between services.
@@ -60,6 +60,7 @@ Kubernetes provides DNS resolution for inter-pod communication using CoreDNS or 
 - Autoscaling
 To test autoscaling, you can use Kubernetes Horizontal Pod Autoscaler (HPA) and simulate high traffic using a tool like locust or ab. Monitor scaling behavior using: 'kubectl get hpa'
 <br>
+
 # Database Interactions
 - Simulate high load on MongoDB using benchmarking tools and observe the application’s ability to handle increased traffic and database load.
 - Results: Note any issues such as increased latency or failure to scale properly. Adjust resource requests/limits and scaling policies based on these observations.
