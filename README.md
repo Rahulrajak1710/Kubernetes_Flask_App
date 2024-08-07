@@ -19,4 +19,4 @@ docker login docker push your-username/flask-app:latest
 - Docker installed
 # step 1
 - Start Minikube <br>
-  -minikube start
+  minikube start
