@@ -13,8 +13,9 @@ docker build -t your-username/flask-app:latest .
 docker login docker push your-username/flask-app:latest
 <br>
 <br>
-## README for Deploying Flask Application and MongoDB on Minikube
-## Prerequisites
+## Prerequisites for Deploying Flask Application and MongoDB on Minikube
 - Minikube installed
 - kubectl installed
 - Docker installed
+# step 1
+- Start Minikube
