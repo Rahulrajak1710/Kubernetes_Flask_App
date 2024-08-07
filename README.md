@@ -22,11 +22,17 @@ docker login docker push your-username/flask-app:latest
 - Start Minikube <br>
   minikube start
 - Apply the Kubernetes configurations <br>
+
 kubectl apply -f mongo-secret.yaml <br>
+
 kubectl apply -f mongo-pv-pvc.yaml <br>
+
 kubectl apply -f mongo-statefulset.yaml <br>
+
 kubectl apply -f flask-deployment.yaml <br>
+
 kubectl apply -f flask-hpa.yaml <br>
+
 - Access the Flask application <br>
 kubectl get svc flask-service
 # DNS Resolution in Kubernetes
