@@ -57,7 +57,8 @@ Kubernetes provides DNS resolution for inter-pod communication using `CoreDNS` o
 - Minikube: Minikube provides a local Kubernetes environment that is ideal for development and testing. Alternatives like Kind were considered but Minikube’s broader feature set and integration with various Kubernetes tools made it a better choice.
 - <br>
 # Testing Scenarios
-- Autoscaling
-To test autoscaling, you can use Kubernetes Horizontal Pod Autoscaler (HPA) and simulate high traffic using a tool like `locust` or `ab`. Monitor scaling behavior using: `kubectl get hpa`
+- Steps for Testing Autoscaling:<br>
+Apply HPA Configuration `kubectl apply -f flask-app-hpa.yaml`
+
 
   
