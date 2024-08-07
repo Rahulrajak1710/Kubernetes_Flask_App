@@ -20,3 +20,11 @@ docker login docker push your-username/flask-app:latest
 # step 1
 - Start Minikube <br>
   minikube start
+- Apply the Kubernetes configurations <br>
+kubectl apply -f mongo-secret.yaml <br>
+kubectl apply -f mongo-pv-pvc.yaml <br>
+kubectl apply -f mongo-statefulset.yaml <br>
+kubectl apply -f flask-deployment.yaml <br>
+kubectl apply -f flask-hpa.yaml <br>
+
+  
