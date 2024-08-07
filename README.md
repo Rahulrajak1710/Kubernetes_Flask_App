@@ -12,12 +12,8 @@ docker build -t your-username/flask-app:latest .
 ## Push the Docker Image to a Container Registry 
 docker login docker push your-username/flask-app:latest
 
-
-
-## Features
-- Automated deployment with GitHub Actions
-- Integration testing
-- Rollback functionality
-
-## Getting Started
-Follow the instructions below to get started with this project.
+## README for Deploying Flask Application and MongoDB on Minikube
+## Prerequisites
+- Minikube installed
+- kubectl installed
+- Docker installed
