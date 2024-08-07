@@ -8,6 +8,7 @@
 ## Build the Docker Image
 docker build -t your-username/flask-app:latest .
 <br>
+<br>
 
 ## Push the Docker Image to a Container Registry 
 docker login docker push your-username/flask-app:latest
