@@ -18,5 +18,5 @@ docker login docker push your-username/flask-app:latest
 - kubectl installed
 - Docker installed
 # step 1
-- Start Minikube
-  minikube start
+- Start Minikube <br>
+  -minikube start
