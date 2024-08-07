@@ -32,5 +32,9 @@ kubectl get svc flask-service
 # DNS Resolution in Kubernetes
 Kubernetes provides DNS resolution for inter-pod communication using CoreDNS or kube-dns. Each pod can communicate with other pods using service names (e.g., mongo-service) which resolve to the corresponding pod IP addresses. Kubernetes DNS automatically manages these resolutions, allowing seamless communication between services.
 # Resource Requests and Limits in Kubernetes
+- Requests:
+  The minimum amount of resources (CPU/Memory) that Kubernetes guarantees for a container. If a container requires more resources than requested, it might be throttled.
+- Limits:
+   The maximum amount of resources that a container can use. Exceeding these limits might result in the container being throttled or terminated.
 
   
