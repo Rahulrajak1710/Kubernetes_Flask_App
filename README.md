@@ -2,7 +2,10 @@
 
 ## Instructions to Build and Push Docker Image
 Build the Docker Image
-## docker build -t your-username/flask-app:latest .
+## docker build -t your-username/flask-app:latest
+Push the Docker Image to a Container Registry 
+## docker login docker push your-username/flask-app:latest
+
 
 
 ## Features
