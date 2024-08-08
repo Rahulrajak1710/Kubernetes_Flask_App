@@ -71,6 +71,13 @@ Kubernetes provides DNS resolution for inter-pod communication using `CoreDNS` o
 Use a load testing tool such as Apache Benchmark `ab` or `Locust` to generate high traffic:
 - Monitor Autoscaling <br>
 `kubectl get hpa`
+<br>
+
+# Setup for Database Interaction Testing
+- Simulate High Load on MongoDB <br>
+Use tools like `mongo-perf` or custom scripts to simulate database load
+- Monitor MongoDB  <br>
+`kubectl logs <mongo-pod-name>`
   
 
 
