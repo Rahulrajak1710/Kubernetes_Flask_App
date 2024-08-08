@@ -1,3 +1,9 @@
+# Output
+
+![Screenshot (145)](https://github.com/user-attachments/assets/03a8a3e5-0fbb-443f-bc63-996b43ce2751)
+![Screenshot (144)](https://github.com/user-attachments/assets/f86437c3-d71b-44bf-8460-82eb3f8594d4)
+![Screenshot (147)](https://github.com/user-attachments/assets/c501c37b-a431-465d-8cfb-48c687feaad1)
+
 # Instructions
 
 ## Instructions to Build and Push Docker Image
